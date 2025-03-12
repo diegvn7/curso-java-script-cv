@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            font: normal 20pt arial;
+            background-color: rgba(221, 15, 8, 0.63);
+            color: black;
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja
+    </div>
+
+    <script>
+        var a = window.document.querySelector('div#area')
+        a.addEventListener('click', clickar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+
+        function clickar() {
+            a.innerText = 'clicou'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou'
+        }
+
+        function sair() {
+            a.innerText = 'saiu'
+        }
+    </script>
+</body>
+</html>
