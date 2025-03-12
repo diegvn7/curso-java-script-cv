@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeoroporto</title>
+</head>
+<body>
+    <h1>Sistema de identificador de nacionalidade</h1>
+    <p>
+        Pais: <input type="text" name="txtnac" id="txtnac">
+        <input type="button" value="VERIFICAR" onclick="verificar()">
+    </p>
+    
+    <div id="res">RESULTADO</div>
+
+    <script>
+        function verificar() {
+            var res = window.document.getElementById('res')
+            var txt = window.document.getElementById('txtnac')
+            var nac = (txt.value)
+            res.innerHTML = `Seu pais é ${nac}`
+            if (nac == 'brasil'){
+                res.innerHTML += `<p>Você é brasileiro</p>`
+            } else {
+                res.innerHTML += `<p>Você é gringo</p>`
+            }
+        }
+    </script>
+</body>
+</html>
