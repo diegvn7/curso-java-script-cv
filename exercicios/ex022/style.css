@@ -17,6 +17,10 @@ section {
     box-shadow: 3px 3px 10px black;
 }
 
+select {
+    width: 200px;
+}
+
 div {
     text-align: center;
     padding: 5px;
